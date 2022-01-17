@@ -4,6 +4,9 @@ This repo contains the code that shows how optimizations of level 1 data cache a
 matrices multiplication performance. I got some ideas from the famous article
 [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf).
 
+More explanation can be found in my article
+[How Much Access to RAM Costs](https://0e39bf7b.blog/posts/how-much-access-to-ram-costs/).
+
 ## Compilation and running
 
 ```
