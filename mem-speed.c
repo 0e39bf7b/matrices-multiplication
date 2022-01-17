@@ -165,7 +165,7 @@ void free_matrix_seq(double **m) {
 }
 
 void measure_speed(size_t sz) {
-  clock_t start, t1, t2, t3;
+  clock_t start, t1, t2, t3, t4;
 
   printf("sz = %ld\n", sz);
 
@@ -209,9 +209,9 @@ void measure_speed(size_t sz) {
   printf("matrix_multiply_t...\n");
   start = clock();
   matrix_multiply_t(sz, mul1, mul2, res3);
-  t3 = clock() - start;
-  printf("finished in %ld\n", t3);
-  check_eql(sz, res1, res_seq);
+  t4 = clock() - start;
+  printf("finished in %ld\n", t4);
+  check_eql(sz, res1, res3);
 
   printf("free_matrix\n\n");
   free_matrix(sz, mul1);
